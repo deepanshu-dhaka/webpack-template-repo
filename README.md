@@ -1,0 +1,10 @@
+- `HtmlWebpackPlugin`: So that webpack can recognize the html file, since webpack only recognizes js files.
+- `css-loader`
+- `style-loader` 
+- `css-loader` will read any CSS files we import in a JavaScript file and store the result in a string. `style-loader` then takes that string and actually adds the JavaScript code that will apply those styles to the page.
+- `import "./styles.css";`  to load the css in our entry point js file.
+- `css-loader` already handles image loading in css for us, so there’s nothing extra to do for image paths in CSS!
+- `html-loader` : To load images in html files
+- If we want to use images in js then do this: Since images aren’t JavaScript, we need to tell Webpack that these files will be assets by adding an `asset/resource` rule. No need to install anything here. 
+ - webpack-dev-server
+ - separate dev, common, and prod webpack config files using merge tool
